@@ -1,9 +1,9 @@
-import Spinner from "./assets/spinner.gif"
+import spinner from "./assets/spinner.gif"
 
 const Spinner = () => {
   return (
     <div className="w-100 mt-100">
-      <img src={Spinner} width={180}    className="text-center mx-auto" alt="Loading..."/>
+      <img src={spinner} width={180}    className="text-center mx-auto" alt="Loading..."/>
     </div>
   )
 }
