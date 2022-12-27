@@ -1,12 +1,21 @@
 import PropTypes from "prop-types"
 function UserItem({user: {login, avatar_url}}) {
   return (
-    <div>
+    <div className="card shadow-md compact side bg-base-100
+    ">
+      <div className="flex-row items-center space-x-4 card-body">
+        <div>
+          <div className="avatar">
+            <div className="rounded-full shadow w-14 h-14"></div>
+            <img src={avatar_url} alt="" />
+          </div>
+        </div>
+      </div>
       user
     </div>
   )
 }
-UserItem.PropTypes ={
+UserItem.propTypes ={
   user: PropTypes.object.isRequired,
 }
 
